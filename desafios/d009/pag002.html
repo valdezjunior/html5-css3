@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        img {
+            max-width: 350px;
+            display: block;
+            margin: auto;
+        }
+
+        div.video {
+            margin: 0px 60px 40px 30px;
+            padding: 20px;
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+        div.video > iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }   
+    </style>
+</head>
+<body>
+    <h1>Curso de HTML5</h1>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/epDCjksKMok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p><a href="https://www.youtube.com/watch?v=epDCjksKMok&list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o" target="_blank">Veja o curso completo</a></p>
+    <a href="index.html"><img src="imagens/voltar.png" alt="Botão"></a>
+</body>
+</html>
