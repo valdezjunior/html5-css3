@@ -19,6 +19,14 @@
         h1 {
             color: white;
             text-align: center;
+            margin-top: 10px;
+        }
+
+        main {
+        min-width: 300px;
+        max-width: 600px;
+        margin: auto;
+        background-color: black;
         }
 
         p {
@@ -43,16 +51,21 @@
         div.video > iframe {
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: 100%;   
+            
         }   
     </style>
 </head>
 <body>
     <h1>Curso de HTML5</h1>
-    <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/epDCjksKMok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <p><a href="https://www.youtube.com/watch?v=epDCjksKMok&list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o" target="_blank">Veja o curso completo</a></p>
-    <a href="index.html"><img src="imagens/voltar.png" alt="Botão"></a>
+    <main>
+        <article>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/epDCjksKMok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p><a href="https://www.youtube.com/watch?v=epDCjksKMok&list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o" target="_blank">Veja o curso completo</a></p>
+            <a href="index.html"><img src="imagens/voltar.png" alt="Botão"></a>
+        </article>
+    </main>
 </body>
 </html>
