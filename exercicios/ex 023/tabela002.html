@@ -13,7 +13,9 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
+
 
         caption {
             font-size: 1.5em;
@@ -28,8 +30,23 @@
         }
 
         thead, tfoot {
-        background-color: gray;
+        background-color: #383838;
         color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+            
+    }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgba(0, 255, 255, 0.295);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgba(255, 235, 205, 0.534);
         }
 
         td.num {
@@ -194,7 +211,7 @@
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>213.317.639</strong></td>
+                <td class="num" colspan="2"><strong>213.317.639</strong></td>
             </tr>
         </tfoot>
     </table>
