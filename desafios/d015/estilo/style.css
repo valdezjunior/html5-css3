@@ -64,7 +64,7 @@ nav a {
     text-decoration: none;
     border-radius: 5px;
     padding: 10px;
-    transition-duration: 0.5;
+    transition-duration: 0.5s;
 }
 
 nav > a:hover {
@@ -117,6 +117,7 @@ main strong {
 main img {
     width: 100%;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 p.pag02 {
@@ -150,6 +151,7 @@ aside h3 {
 aside ul {
     list-style-type: '\2714\0020\0020';
     list-style-position: inside;
+    columns: 2;
 }
 
 footer {
@@ -160,8 +162,16 @@ footer {
 }
 
 footer a {
-    color: orange;
+    color: var(--cor5);
     text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition-duration: 0.5s;
+}
+
+footer a:hover {
+    background-color: var(--cor0);
+    border-radius: 5px;
 }
 
 h1.tabela {
