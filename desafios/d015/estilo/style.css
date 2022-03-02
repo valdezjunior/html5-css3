@@ -120,14 +120,12 @@ main img {
 }
 
 p.pag02 {
-    text-align: right;
+    text-align: center;
 }
 
 main p.pag02 > a {
     color: black;
     font-weight: bold;
-    text-align: right;
-    background-color: var(--cor0);
     padding: 5px;
 }
 
