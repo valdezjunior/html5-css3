@@ -28,6 +28,8 @@ html, body {
 body {
     background-color: lightgray;
     font-family: var(--fontepadrão);
+    background-image: url('../imagens/corações.jpg');
+    background-attachment: fixed;
 }
 
 header {
@@ -50,7 +52,7 @@ header p {
 
 main {
     max-width: 400px;
-    background-color: white;
+    background-color: black;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -58,16 +60,19 @@ main {
 }
 
 section {
-    padding-top: 10vh;
     padding-bottom: 10vh;
     text-align: justify;
     text-indent: 30px;
     line-height: 2em;
+    font-family: var(--fonte2);
 }
 
 section h1 {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     font-family: var(--fontetitulos);
-    font-size: 1.5em;
+    font-size: 2em;
+    color: red;
 }
 
 section p {
@@ -75,3 +80,65 @@ section p {
     font-size: 1em;
 }
 
+section.normal {
+    color: white;
+    padding-top: 20px;
+    font-size: 1.3em;
+}
+
+section.imagem1 {
+    background-image: url('../imagens/vida1.jpg');
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.imagem1 > p {
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 50px;
+    text-align: center;
+}
+
+section.imagem2 {
+    background-image: url('../imagens/nós\ 2.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem2 > p {
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 50px;
+    text-align: center;
+}
+
+p.futuro {
+    text-align: right;
+    padding-top: 20px;
+}
+
+
+footer {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    
+}
+
+footer a {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.726);
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+    transition-duration: 0.7s;
+}
